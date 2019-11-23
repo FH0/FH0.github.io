@@ -1,0 +1,75 @@
+---
+layout: post
+title: 静态交叉编译Android的OpenVPN客户端二进制执行文件
+category: 编译
+---
+
+### 准备工作
+- [搭建Android编译环境][android-environment]
+
+- [交叉编译Android的OpenSSL][android-openssl]
+
+- [交叉编译Android的LZ4][android-lz4]
+
+- [交叉编译Android的LZO][android-lzo]
+
+
+### 编译
+```shell
+#首先从官网下载合适的版本
+openvpn_version=2.4.8
+wget "https://swupdate.openvpn.org/community/releases/openvpn-$openvpn_version.tar.gz"
+
+#解压缩到当前目录
+tar xf "openvpn-$openvpn_version.tar.gz"
+
+#进入编译目录
+cd openvpn-$openvpn_version
+
+#设置依赖库路径
+LIB_32_OPENSSL=~/android-arm
+LIB_32_LZO=~/android-arm
+LIB_32_LZ4=~/android-arm
+LIB_64_OPENSSL=~/android-arm64
+LIB_64_LZO=~/android-arm64
+LIB_64_LZ4=~/android-arm64
+
+#静态编译32位执行文件
+./configure --host=arm-linux-androideabi --disable-server --enable-static --disable-shared --disable-plugins --disable-debug \
+	IFCONFIG="/system/bin/ifconfig" \
+	OPENSSL_LIBS="-L$LIB_32_OPENSSL/lib -lssl -lcrypto" \
+	OPENSSL_CFLAGS="-I$LIB_32_OPENSSL/include" \
+	LZO_LIBS="-L$LIB_32_LZO/lib -llzo2" \
+	LZO_CFLAGS="-I$LIB_32_LZO/include" \
+	LZ4_LIBS="-L$LIB_32_LZ4/lib -llz4"
+make LIBS='-all-static' -j $(grep "cpu cores" /proc/cpuinfo | wc -l)
+mv src/openvpn/openvpn ../openvpn_arm
+make clean
+
+#静态编译64位执行文件
+./configure --host=aarch64-linux-android --disable-server --enable-static --disable-shared --disable-plugins --disable-debug \
+	IFCONFIG="/system/bin/ifconfig" \
+	OPENSSL_LIBS="-L$LIB_64_OPENSSL/lib -lssl -lcrypto" \
+	OPENSSL_CFLAGS="-I$LIB_64_OPENSSL/include" \
+	LZO_LIBS="-L$LIB_64_LZO/lib -llzo2" \
+	LZO_CFLAGS="-I$LIB_64_LZO/include" \
+	LZ4_LIBS="-L$LIB_64_LZ4/lib -llz4"
+make LIBS='-all-static -ldl' -j $(grep "cpu cores" /proc/cpuinfo | wc -l)
+mv src/openvpn/openvpn ../openvpn_arm64
+```
+
+返回上级目录，去掉执行文件的符号信息和调试信息，减小体积
+```shell
+cd ..
+aarch64-linux-android-strip openvpn_arm*
+```
+
+然后就可以删除源文件了
+```shell
+rm -rf "openvpn-$openvpn_version" "openvpn-$openvpn_version.tar.gz"
+```
+
+[android-environment]: /编译/2019/11/22/android-environment.html
+[android-openssl]: /编译/2019/11/22/android-openssl.html
+[android-lzo]: /编译/2019/11/23/android-lzo.html
+[android-lz4]: /编译/2019/11/23/android-lz4.html

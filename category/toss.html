@@ -1,0 +1,15 @@
+---
+layout: home
+---
+
+
+<h2>折腾</h2>
+{% for category in site.categories %}
+        {% if category.first == "折腾" %}
+		<ul class="arc-list">
+			{% for post in category.last %}
+				<li>{{ post.date | date:"%Y.%m.%d"}}&nbsp;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+{% endfor %}

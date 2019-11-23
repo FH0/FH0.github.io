@@ -5,6 +5,11 @@ url: ""
 github_username: fh0
 
 markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

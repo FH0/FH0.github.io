@@ -4,9 +4,11 @@ title: 交叉编译Android的OpenSSL
 category: 编译
 ---
 
-在编译之前，需要[搭建Android编译环境][android-environment]
+### 准备工作
+- [搭建Android编译环境][android-environment]
 
-```
+### 编译
+```shell
 #从官网下载合适的版本
 openssl_version=1.1.1d
 wget "https://www.openssl.org/source/openssl-$openssl_version.tar.gz"
@@ -35,9 +37,9 @@ make install_dev
 ```
 
 编译完之后，就可以删除源文件了
-```
+```shell
 cd ..
 rm -rf "openssl-$openssl_version" "openssl-$openssl_version.tar.gz"
 ```
 
-[android-environment]: android-environment.html
+[android-environment]: /编译/2019/11/22/android-environment.html

@@ -4,7 +4,8 @@ title: 搭建Android编译环境
 category: 编译
 ---
 
-```
+### 编译
+```shell
 #从官网下载合适的版本
 andrid_ndk_version=r20
 wget "https://dl.google.com/android/repository/android-ndk-$andrid_ndk_version-linux-x86_64.zip"
@@ -34,6 +35,6 @@ echo "export PATH=\"$PATH:$android_ndk_root:$android_ndk_arm_dir/bin:$android_nd
 ```
 
 搭建完之后，就可以删除源文件了
-```
+```shell
 rm -f "android-ndk-$andrid_ndk_version-linux-x86_64.zip"
 ```
