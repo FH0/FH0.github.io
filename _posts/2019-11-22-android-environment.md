@@ -17,7 +17,6 @@ android_ndk_arm64_dir=/usr/local/android-aarch64
 
 #解压缩安装Android NDK
 rm -rf $android_ndk_root
-mkdir $android_ndk_root
 unzip "android-ndk-$andrid_ndk_version-linux-x86_64.zip"
 mv android-ndk-$andrid_ndk_version $android_ndk_root
 
