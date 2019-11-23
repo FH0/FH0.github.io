@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 静态交叉编译Android的OpenVPN客户端二进制执行文件
+title: 静态交叉编译Android的OpenVPN
 category: 编译
 ---
 
