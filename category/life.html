@@ -3,11 +3,13 @@ layout: home
 ---
 
 <h2>人生</h2>
+</br>
 {% for category in site.categories %}
         {% if category.first == "人生" %}
 		<ul class="arc-list">
 			{% for post in category.last %}
 				<li>{{ post.date | date:"%Y.%m.%d"}}&nbsp;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
+                                </br>
 			{% endfor %}
 		</ul>
 	{% endif %}
