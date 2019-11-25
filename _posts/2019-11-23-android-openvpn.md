@@ -35,24 +35,22 @@ LIB_64_LZO=~/android-arm64
 LIB_64_LZ4=~/android-arm64
 
 #静态编译32位执行文件
-./configure --host=arm-linux-androideabi --disable-server --enable-static --disable-shared --disable-plugins --disable-debug \
+./configure --host=arm-linux-androideabi --enable-static --disable-shared --disable-plugins --disable-debug \
 	IFCONFIG="/system/bin/ifconfig" \
 	OPENSSL_LIBS="-L$LIB_32_OPENSSL/lib -lssl -lcrypto" \
 	OPENSSL_CFLAGS="-I$LIB_32_OPENSSL/include" \
 	LZO_LIBS="-L$LIB_32_LZO/lib -llzo2" \
-	LZO_CFLAGS="-I$LIB_32_LZO/include" \
 	LZ4_LIBS="-L$LIB_32_LZ4/lib -llz4"
 make LIBS='-all-static' -j $(grep "cpu cores" /proc/cpuinfo | wc -l)
 mv src/openvpn/openvpn ../openvpn_arm
 make clean
 
 #静态编译64位执行文件
-./configure --host=aarch64-linux-android --disable-server --enable-static --disable-shared --disable-plugins --disable-debug \
+./configure --host=aarch64-linux-android --enable-static --disable-shared --disable-plugins --disable-debug \
 	IFCONFIG="/system/bin/ifconfig" \
 	OPENSSL_LIBS="-L$LIB_64_OPENSSL/lib -lssl -lcrypto" \
 	OPENSSL_CFLAGS="-I$LIB_64_OPENSSL/include" \
 	LZO_LIBS="-L$LIB_64_LZO/lib -llzo2" \
-	LZO_CFLAGS="-I$LIB_64_LZO/include" \
 	LZ4_LIBS="-L$LIB_64_LZ4/lib -llz4"
 make LIBS='-all-static -ldl' -j $(grep "cpu cores" /proc/cpuinfo | wc -l)
 mv src/openvpn/openvpn ../openvpn_arm64

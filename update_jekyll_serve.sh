@@ -1,4 +1,4 @@
 #!/bin/bash
 
-sed -i '1s|a|a|' _posts/*
+bundle exec jekyll s --host 0.0.0.0 --port 808
 
