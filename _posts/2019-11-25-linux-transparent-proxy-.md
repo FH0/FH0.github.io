@@ -15,7 +15,7 @@ category: 折腾
 ### 安装工具包
 ```shell
 #下载工具包
-wget "https://fho.github.io/assets/transparent-proxy/transparent-tools.zip"
+wget "https://fh0.github.io/assets/transparent-proxy/transparent-tools.zip"
 
 #将工具包解压缩到合适的目录
 Transparent_dir=/usr/local/transparent-proxy
