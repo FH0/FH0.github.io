@@ -67,6 +67,9 @@ aarch64-linux-android-strip openvpn_arm*
 rm -rf "openvpn-$openvpn_version" "openvpn-$openvpn_version.tar.gz"
 ```
 
+### 下载
+[编译好的文件](/assets/android-openvpn.tar.gz)
+
 [android-environment]: /编译/2019/11/22/android-environment.html
 [android-openssl]: /编译/2019/11/22/android-openssl.html
 [android-lzo]: /编译/2019/11/23/android-lzo.html
