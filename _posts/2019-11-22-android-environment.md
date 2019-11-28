@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 搭建Android编译环境
+title: 搭建 Android 编译环境
 category: 编译
 ---
 
@@ -10,21 +10,21 @@ category: 编译
 andrid_ndk_version=r20
 wget "https://dl.google.com/android/repository/android-ndk-$andrid_ndk_version-linux-x86_64.zip"
 
-#分别指定Android NDK目录，Arm编译链目录，Arm64编译链目录
+#分别指定 Android NDK 目录，Arm 编译链目录，Arm64 编译链目录
 android_ndk_root=/usr/local/android
 android_ndk_arm_dir=/usr/local/android-arm
 android_ndk_arm64_dir=/usr/local/android-aarch64
 
-#解压缩安装Android NDK
+#解压缩安装 Android NDK
 rm -rf $android_ndk_root
 unzip "android-ndk-$andrid_ndk_version-linux-x86_64.zip"
 mv android-ndk-$andrid_ndk_version $android_ndk_root
 
-#安装Arm编译链
+#安装 Arm 编译链
 rm -rf $android_ndk_arm_dir
 $android_ndk_root/build/tools/make-standalone-toolchain.sh --arch=arm --platform=android-21 --install-dir=$android_ndk_arm_dir
 
-#安装Arm64编译链
+#安装 Arm64 编译链
 rm -rf $android_ndk_arm64_dir
 $android_ndk_root/build/tools/make-standalone-toolchain.sh --arch=arm64 --platform=android-21 --install-dir=$android_ndk_arm64_dir
 

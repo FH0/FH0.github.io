@@ -1,17 +1,17 @@
 ---
 layout: post
-title: 静态交叉编译Android的OpenVPN
+title: 静态交叉编译 Android 的 OpenVPN
 category: 编译
 ---
 
 ### 准备工作
-- [搭建Android编译环境][android-environment]
+- [搭建 Android 编译环境][android-environment]
 
-- [交叉编译Android的OpenSSL][android-openssl]
+- [交叉编译 Android 的 OpenSSL][android-openssl]
 
-- [交叉编译Android的LZ4][android-lz4]
+- [交叉编译 Android 的 LZ4][android-lz4]
 
-- [交叉编译Android的LZO][android-lzo]
+- [交叉编译 Android 的 LZO][android-lzo]
 
 
 ### 编译
@@ -34,7 +34,7 @@ LIB_64_OPENSSL=~/android-arm64
 LIB_64_LZO=~/android-arm64
 LIB_64_LZ4=~/android-arm64
 
-#静态编译32位执行文件
+#静态编译 32 位执行文件
 ./configure --host=arm-linux-androideabi --enable-static --disable-shared --disable-plugins --disable-debug \
 	IFCONFIG="/system/bin/ifconfig" \
 	OPENSSL_LIBS="-L$LIB_32_OPENSSL/lib -lssl -lcrypto" \
@@ -45,7 +45,7 @@ make LIBS='-all-static' -j $(grep "cpu cores" /proc/cpuinfo | wc -l)
 mv src/openvpn/openvpn ../openvpn_arm
 make clean
 
-#静态编译64位执行文件
+#静态编译 64 位执行文件
 ./configure --host=aarch64-linux-android --enable-static --disable-shared --disable-plugins --disable-debug \
 	IFCONFIG="/system/bin/ifconfig" \
 	OPENSSL_LIBS="-L$LIB_64_OPENSSL/lib -lssl -lcrypto" \

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 搭建X64编译环境
+title: 搭建 X64 编译环境
 category: 编译
 ---
 

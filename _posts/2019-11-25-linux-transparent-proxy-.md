@@ -1,16 +1,14 @@
 ---
 layout: post
-title: 基于v2ray的透明代理
+title: 基于 V2Ray 的透明代理
 category: 折腾
 ---
 
 ### 目标
-- 代理所有由主机发出的TCP，UDP和DNS数据包
+- 代理所有由主机发出的 TCP，UDP 和 DNS 数据包
 
 ### 兼容性
-- CentOS 7及以上版本
-- Debian 9及以上版本
-- Ubuntu 16.04及以上版本
+- 理论上所有的 64 位 Linux 系统（已在 CentOS-6-x64 和 Debian-9-x64 上测试通过）
 
 ### 安装工具包
 ```shell
@@ -25,8 +23,8 @@ unzip transparent-tools.zip -d $Transparent_dir
 #添加执行权限
 chmod -R +x $Transparent_dir
 
-#如图编辑v2ray配置文件，local_tcp.json和local_udp.json都使用下面的修改方法
-#在local_udp中DNS的值需要多修改一遍，在下面的routing中也有关于DNS的值
+#如图编辑 V2Ray 配置文件，local_tcp.json 和 local_udp.json 都使用下面的修改方法
+#在 local_udp.json 中 DNS 的值需要多修改一遍，在下面的 routing 中也有关于 DNS 的值
 ```
 ![DNS](/assets/transparent-proxy/dns.jpg)
 

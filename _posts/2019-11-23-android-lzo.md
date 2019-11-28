@@ -1,11 +1,11 @@
 ---
 layout: post
-title: 交叉编译Android的LZO
+title: 交叉编译 Android 的 LZO
 category: 编译
 ---
 
 ### 准备工作
-- [搭建Android编译环境][android-environment]
+- [搭建 Android 编译环境][android-environment]
 
 ### 编译
 ```shell
@@ -23,13 +23,13 @@ cd lzo-$lzo_version
 LIB_32=~/android-arm
 LIB_64=~/android-arm64
 
-#交叉编译32位库
+#交叉编译 32 位库
 ./configure --host=arm-linux-androideabi --prefix=$LIB_32 --enable-shared
 make -j $(grep "cpu cores" /proc/cpuinfo | wc -l)
 make install
 make clean
 
-#交叉编译64位库
+#交叉编译 64 位库
 ./configure --host=aarch64-linux-android --prefix=$LIB_64 --enable-shared
 make -j $(grep "cpu cores" /proc/cpuinfo | wc -l)
 make install
