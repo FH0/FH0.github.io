@@ -23,8 +23,7 @@ unzip transparent-tools.zip -d $Transparent_dir
 #添加执行权限
 chmod -R +x $Transparent_dir
 
-#如图编辑 V2Ray 配置文件，local_tcp.json 和 local_udp.json 都使用下面的修改方法
-#在 local_udp.json 中 DNS 的值需要多修改一遍，在下面的 routing 中也有关于 DNS 的值
+#如图编辑 V2Ray 配置文件，也就是 config.json
 ```
 ![DNS](/assets/transparent-proxy/dns.jpg)
 
