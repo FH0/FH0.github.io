@@ -4,7 +4,7 @@ title: 搭建 Android 编译环境
 category: 编译
 ---
 
-#说明
+### 说明
 - 安装独立工具链时需要 Python，否则会失败
 
 ### 编译
