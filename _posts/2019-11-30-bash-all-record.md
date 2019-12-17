@@ -14,4 +14,12 @@ export HISTSIZE=100000
 sed -i '/HISTTIMEFORMAT/d' ~/.bashrc
 echo "HISTTIMEFORMAT='%F %T  '" >> ~/.bashrc
 export HISTTIMEFORMAT='%F %T  '
+
+#实时记录
+sed -i '/histappend/d' ~/.bashrc
+sed -i '/PROMPT_COMMAND/d' ~/.bashrc
+echo "shopt -s histappend" >> ~/.bashrc
+echo "PROMPT_COMMAND='history -a'" >> ~/.bashrc
+shopt -s histappend
+export PROMPT_COMMAND='history -a'
 ```
