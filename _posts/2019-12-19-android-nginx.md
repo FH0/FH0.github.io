@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 静态编译 Android 的 Nginx
+title: 静态交叉编译 Android 的 Nginx
 category: 编译
 ---
 
