@@ -43,8 +43,7 @@ NGX_PREFIX=/data CFLAGS='-I/root/android-arm/include' ./configure \
 	--prefix=/usr/local/nginx --with-cc-opt="-static" \
 	--with-ld-opt="-static" --with-cpu-opt=generic \
 	--with-pcre=./pcre-8.43 --with-zlib=./zlib-1.2.11 --with-http_slice_module \
-	--with-http_addition_module --with-openssl-opt='--cross-compile-prefix=arm-linux-androideabi-' \
-	--without-http_upstream_zone_module
+	--with-http_addition_module --without-http_upstream_zone_module
 echo -e '#ifndef NGX_SYS_NERR\n#define NGX_SYS_NERR  132\n#endif' >> objs/ngx_auto_config.h
 echo -e '#ifndef NGX_HAVE_SYSVSHM\n#define NGX_HAVE_SYSVSHM 1\n#endif' >> objs/ngx_auto_config.h
 sed -i 's|-static ./pcre-8.43/.libs/libpcre.a|-static ./pcre-8.43/.libs/libpcre.a /root/android-arm/lib/libssl.a /root/android-arm/lib/libcrypto.a|' objs/Makefile
@@ -61,8 +60,7 @@ NGX_PREFIX=/data CFLAGS='-I/root/android-arm64/include' ./configure \
 	--prefix=/usr/local/nginx --with-cc-opt="-static" \
 	--with-ld-opt="-static" --with-cpu-opt=generic \
 	--with-pcre=./pcre-8.43 --with-zlib=./zlib-1.2.11 --with-http_slice_module \
-	--with-http_addition_module --with-openssl-opt='--cross-compile-prefix=aarch64-linux-android-' \
-	--without-http_upstream_zone_module
+	--with-http_addition_module --without-http_upstream_zone_module
 echo -e '#ifndef NGX_SYS_NERR\n#define NGX_SYS_NERR  132\n#endif' >> objs/ngx_auto_config.h
 echo -e '#ifndef NGX_HAVE_SYSVSHM\n#define NGX_HAVE_SYSVSHM 1\n#endif' >> objs/ngx_auto_config.h
 sed -i 's|-static -ldl ./pcre-8.43/.libs/libpcre.a|-static -ldl ./pcre-8.43/.libs/libpcre.a /root/android-arm64/lib/libssl.a /root/android-arm64/lib/libcrypto.a|' objs/Makefile
