@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 静态编译 Android 的 tun2socks（支持 --enable-udprelay）
+title: 编译 Android 的 tun2socks（支持 --enable-udprelay）
 category: 编译
 ---
 
@@ -10,32 +10,21 @@ category: 编译
 ### 编译
 ```shell
 #克隆源码，需要安装 git
-git clone "https://github.com/FH0/badvpn.git"
-
-#进入编译目录
+mkdir badvpn
 cd badvpn
+git clone "https://github.com/FH0/badvpn.git" jni
 
-#编译（arm）
-SRCDIR=. CC=arm-linux-androideabi-gcc ENDIAN=little \
-	CFLAGS='-D BADVPN_SOCKS_UDP_RELAY' \
-	LDFLAGS='-static' \
-	bash compile-tun2sock.sh
-mv ../tun2socks ../tun2socks_arm
-
-#编译（arm64）
-SRCDIR=. CC=aarch64-linux-android-gcc ENDIAN=little \
-	CFLAGS='-D BADVPN_SOCKS_UDP_RELAY' \
-	LDFLAGS='-static' \
-	bash compile-tun2sock.sh
-mv ../tun2socks ../tun2socks_arm64
+#编译
+ndk-build
 
 #处理编译好的文件
-cd ..
-aarch64-linux-android-strip tun2socks_arm*
+mv libs/armeabi-v7a/tun2socks ../tun2socks_arm
+mv libs/arm64-v8a/tun2socks ../tun2socks_arm64
 ```
 
 编译完之后，就可以删除源文件了
 ```shell
+cd ..
 rm -rf badvpn
 ```
 
