@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 交叉编译 Android 的 zstd
+title: 交叉编译 Android 的 json-c
 category: 编译
 ---
 
