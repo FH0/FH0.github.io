@@ -5,12 +5,12 @@ category: 编译
 ---
 
 ### 准备工作
-- [搭建 Android 编译环境](/编译/2019/11/22/android-environment.html)
-- [交叉编译 Android 的 OpenSSL](/编译/2019/11/22/android-openssl.html)
-- [交叉编译 Android 的 zlib](/编译/2019/12/19/android-zlib.html)
-- [交叉编译 Android 的 c-ares](/编译/2019/12/28/android-c-ares.html)
-- [交叉编译 Android 的 libssh2](/编译/2019/12/28/android-libssh2.html)
-- [交叉编译 Android 的 expat](/编译/2019/12/28/android-expat.html)
+- [搭建 Android 编译环境]({% post_url 2019-11-22-android-environment %})
+- [交叉编译 Android 的 OpenSSL]({% post_url 2019-11-22-android-openssl %})
+- [交叉编译 Android 的 zlib]({% post_url 2019-12-19-android-zlib %})
+- [交叉编译 Android 的 c-ares]({% post_url 2019-12-28-android-c-ares %})
+- [交叉编译 Android 的 libssh2]({% post_url 2019-12-28-android-libssh2 %})
+- [交叉编译 Android 的 expat]({% post_url 2019-12-28-android-expat %})
 
 ### 编译
 ```shell

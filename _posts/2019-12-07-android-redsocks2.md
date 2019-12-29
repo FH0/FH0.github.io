@@ -5,9 +5,9 @@ category: 编译
 ---
 
 ### 准备工作
-- [搭建 Android 编译环境][android-environment]
-- [交叉编译 Android 的 libevent2][android-libevent2]
-- [交叉编译 Android 的 OpenSSL][android-openssl]
+- [搭建 Android 编译环境]({% post_url 2019-11-22-android-environment %})
+- [交叉编译 Android 的 libevent2]({% post_url 2019-12-07-android-libevent2 %})
+- [交叉编译 Android 的 OpenSSL]({% post_url 2019-11-22-android-openssl %})
 
 ### 编译
 ```shell
@@ -43,8 +43,5 @@ rm -rf redsocks
 ```
 
 ### 下载
-[编译好的文件](/assets/android-redsocks2.tar.gz)
+[编译好的文件](/assets/android-redsocks2.tgz)
 
-[android-environment]: /编译/2019/11/22/android-environment.html
-[android-libevent2]: /编译/2019/12/07/android-libevent2.html
-[android-openssl]: /编译/2019/11/22/android-openssl.html

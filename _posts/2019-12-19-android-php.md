@@ -8,10 +8,10 @@ category: 编译
 - 命令中涉及的依赖文件路径需要改成你自己的
 
 ### 准备工作
-- [搭建 Android 编译环境][android-environment]
-- [交叉编译 Android 的 zlib][android-zlib]
-- [交叉编译 Android 的 OpenSSL][android-openssl]
-- [交叉编译 Android 的 libcurl][android-libcurl]
+- [搭建 Android 编译环境]({% post_url 2019-11-22-android-environment %})
+- [交叉编译 Android 的 zlib]({% post_url 2019-12-19-android-zlib %})
+- [交叉编译 Android 的 OpenSSL]({% post_url 2019-11-22-android-openssl %})
+- [交叉编译 Android 的 libcurl]({% post_url 2019-12-16-android-libcurl %})
 
 ### 编译
 ```shell
@@ -76,9 +76,5 @@ rm -rf php-$php_version
 ```
 
 ### 下载
-[编译好的文件](/assets/android-php.tar.gz)
+[编译好的文件](/assets/android-php.tgz)
 
-[android-environment]: /编译/2019/11/22/android-environment.html
-[android-zlib]: /编译/2019/12/19/android-zlib.html
-[android-openssl]: /编译/2019/11/22/android-openssl.html
-[android-libcurl]: /编译/2019/12/16/android-libcurl.html

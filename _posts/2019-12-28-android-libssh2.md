@@ -5,9 +5,9 @@ category: 编译
 ---
 
 ### 准备工作
-- [搭建 Android 编译环境](/编译/2019/11/22/android-environment.html)
-- [交叉编译 Android 的 OpenSSL](/编译/2019/11/22/android-openssl.html)
-- [交叉编译 Android 的 zlib](/编译/2019/12/19/android-zlib.html)
+- [搭建 Android 编译环境]({% post_url 2019-11-22-android-environment %})
+- [交叉编译 Android 的 OpenSSL]({% post_url 2019-11-22-android-openssl %})
+- [交叉编译 Android 的 zlib]({% post_url 2019-12-19-android-zlib %})
 
 ### 编译
 ```shell
@@ -25,4 +25,4 @@ rm -rf libssh2-1.9.0
 ```
 
 ### 下载
-[编译好的文件](/assets/android-libssh2.tgz)
+[编译好的文件]({% post_url 2019-12-28-android-libssh2 %})

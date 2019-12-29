@@ -5,7 +5,7 @@ category: 编译
 ---
 
 ### 准备工作
-- [搭建 Android 编译环境](/编译/2019/11/22/android-environment.html)
+- [搭建 Android 编译环境]({% post_url 2019-11-22-android-environment %})
 
 ### 编译
 ```shell
@@ -23,4 +23,4 @@ rm -rf expat-2.2.9
 ```
 
 ### 下载
-[编译好的文件](/assets/android-expat.tgz)
+[编译好的文件]({% post_url 2019-12-28-android-expat %})
