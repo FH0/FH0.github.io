@@ -1,417 +1,362 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-xmlns:mobile="http://www.baidu.com/schemas/sitemap-mobile/1/">
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+       http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+>
 <url>
  <loc>https://fh0.github.io</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
 <loc>https://fh0.github.io/</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/category/compile.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
 <loc>https://fh0.github.io/category/compile.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/28/x64-libssh2.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/28/x64-expat.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/28/x64-c-ares.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/28/x64-aria2.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/28/android-libssh2.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/28/android-expat.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/28/android-c-ares.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/28/android-aria2.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/27/x64-sqlite3.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/27/android-sqlite3.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/25/x64-mbedtls.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/25/x64-json-c.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/25/android-mbedtls.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/25/android-json-c.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/22/x64-zstd.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/22/x64-udp2raw.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/22/x64-tinyvpn.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/22/x64-libsodium.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/22/android-zstd.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/22/android-udp2raw.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/22/android-tinyvpn.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/22/android-libsodium.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/19/x64-nginx.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/19/android-zlib.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/19/android-php.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/19/android-nginx.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/16/x64-smartdns.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/16/x64-libuv.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/16/android-smartdns.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/16/android-libuv.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/16/android-libcurl.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/13/x64-pdnsd.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/13/android-pdnsd.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/10/x64-tun2socks.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/10/android-tun2socks.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/09/x64-zlib.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/09/x64-php.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/09/x64-libcurl.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/08/x64-libressl.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/07/x64-redsocks2.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/07/x64-libevent2.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/07/android-redsocks2.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/12/07/android-libevent2.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/11/25/x64-openvpn.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/11/23/x64-openssl.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/11/23/x64-lzo.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/11/23/x64-lz4.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/11/23/x64-environment.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/11/23/android-openvpn.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/11/23/android-lzo.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/11/23/android-lz4.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/11/22/android-openssl.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://fh0.github.io/%E7%BC%96%E8%AF%91/2019/11/22/android-environment.html</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-12-28</lastmod>
+ <lastmod>2020-01-01</lastmod>
  <changefreq>weekly</changefreq>
 </url>
 </urlset>
