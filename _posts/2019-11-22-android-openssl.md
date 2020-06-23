@@ -43,5 +43,5 @@ rm -rf "openssl-$openssl_version" "openssl-$openssl_version.tar.gz"
 ```
 
 ### 下载
-[编译好的文件]({% post_url 2019-11-22-android-openssl %})
+[编译好的文件](/assets/android-openssl.tgz)
 
