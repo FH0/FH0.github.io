@@ -11,15 +11,15 @@ category: 折腾
 &emsp;&emsp;试了一下，真的很强。这个软件大概的原理就是：通过`adb`启动手机上被自动安装的客户端，客户端启动 vpn 让数据通过 USB 到达电脑上的服务端，服务端实现了自己的协议栈来连接真正的服务端。
 
 &emsp;&emsp;不想去 GitHub 里慢慢研究的话可以看看我的简易教程。
-- 1. 下载并解压[服务端文件](https://github.com/FH0/nubia/blob/master/gnirehtet-rust-win64.zip?raw=true)
+- 下载并解压[服务端文件](https://github.com/FH0/nubia/blob/master/gnirehtet-rust-win64.zip?raw=true)
 ![img](/assets/gnirehtet解压.png)
-- 2. 手机开启 USB 调试模式后连接电脑
+- 手机开启 USB 调试模式后连接电脑
 ![img](/assets/gnirehtet手机.jpg)
-- 3. 双击 gnirehtet-run.cmd
+- 双击 gnirehtet-run.cmd
 ![img](/assets/gnirehtet_cmd.png)
 
 &emsp;&emsp;但是我在使用过程中发现了几个问题：
-- 1. 如果 USB 线松动的话必须重启服务端
-- 2. 清理后台之后必须重启服务端
+- 如果 USB 线松动的话必须重启服务端
+- 清理后台之后必须重启服务端
 
 &emsp;&emsp;那我就很郁闷了呀，这个方案还是不够成熟。我现在并没有采取这种方式来打游戏，因为我发现把热点从 5G 频段换成 2.4G 频段之后就没问题了。
