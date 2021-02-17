@@ -21,3 +21,53 @@ iptables -t mangle -A PREROUTING -s 192.168.0.0/16 ! -d 192.168.0.0/16 -p udp -j
 ```
 
 &emsp;&emsp;我发现一个小技巧就是 `ip route add` 那里其实可以进行分流。
+
+-
+-
+-
+-
+- 加更
+-
+-
+-
+-
+
+&emsp;&emsp;再说说 OUTPUT 吧。比如，路由器只能代理它的子网，而它本身是不能代理的，因为没有添加 OUTPUT 上的规则。要弄清楚这个，得搞懂支持 TPROXY 的代理软件是怎么把数据发回去的。
+
+```txt
+对于 TCP，就是直接写就行了，但是返回去的数据包会被 TPROXY 打上标记，从而路由。这是不行的，所以要取消标记，从而不被路由。
+
+对于 UDP，一般是新建一个 socket，然后 bind source。或者是用 raw socket，感兴趣可以看看[这篇文章]({% post_url 2021-02-17-tproxy-raw-socket %})。没什么问题。
+```
+
+&emsp;&emsp;下面的规则会同时代理本机和被转发的设备的数据。当然，需要 [setgid](https://man7.org/linux/man-pages/man2/setgid.2.html) 为 2000，这也是一个小技巧，通过 gid 来放行（uid 为 0，gid 为 2000 是被允许的）。至于 DNS 什么的。。。
+```bash
+ip route add local default dev lo table 2000
+ip rule add from all fwmark 0x20000 lookup 2000
+
+iptables -t mangle -A OUTPUT -m owner --gid-owner 2000 -j MARK --set-xmark 0 # 所说的清除 TCP 标记
+iptables -t mangle -A OUTPUT -m owner --gid-owner 2000 -j ACCEPT
+iptables -t mangle -A OUTPUT -d 0.0.0.0/8 -j ACCEPT
+iptables -t mangle -A OUTPUT -d 100.64.0.0/10 -j ACCEPT
+iptables -t mangle -A OUTPUT -d 127.0.0.0/8 -j ACCEPT
+iptables -t mangle -A OUTPUT -d 169.254.0.0/16 -j ACCEPT
+iptables -t mangle -A OUTPUT -d 192.0.0.0/24 -j ACCEPT
+iptables -t mangle -A OUTPUT -d 192.0.2.0/24 -j ACCEPT
+iptables -t mangle -A OUTPUT -d 192.88.99.0/24 -j ACCEPT
+iptables -t mangle -A OUTPUT -d 198.18.0.0/15 -j ACCEPT
+iptables -t mangle -A OUTPUT -d 198.51.100.0/24 -j ACCEPT
+iptables -t mangle -A OUTPUT -d 203.0.113.0/24 -j ACCEPT
+iptables -t mangle -A OUTPUT -d 172.16.0.0/12 -j ACCEPT
+iptables -t mangle -A OUTPUT -d 192.168.0.0/16 -j ACCEPT
+iptables -t mangle -A OUTPUT -d 10.0.0.0/8 -j ACCEPT
+iptables -t mangle -A OUTPUT -d 224.0.0.0/3 -j ACCEPT
+iptables -t mangle -A OUTPUT -p tcp -j MARK --set-xmark 0x20000
+iptables -t mangle -A OUTPUT -p udp -j MARK --set-xmark 0x20000
+
+iptables -t mangle -A PREROUTING -p tcp -s 192.168.0.0/16 ! -d 192.168.0.0/16 -j MARK --set-xmark 0x20000
+iptables -t mangle -A PREROUTING -p udp -s 192.168.0.0/16 ! -d 192.168.0.0/16 -j MARK --set-xmark 0x20000
+iptables -t mangle -A PREROUTING -p tcp -m mark --mark 0x20000 -j TPROXY --on-port 2000 --tproxy-mark 0x20000
+iptables -t mangle -A PREROUTING -p udp -m mark --mark 0x20000 -j TPROXY --on-port 2000 --tproxy-mark 0x20000
+```
+
+&emsp;&emsp;上面的规则是一边写一边测试的。
