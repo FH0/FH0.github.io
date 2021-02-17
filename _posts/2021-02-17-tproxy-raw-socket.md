@@ -4,6 +4,8 @@ title: TProxy 与 Raw Socket
 category: 折腾
 ---
 
+&emsp;&emsp; 相比于新建 udp socket 然后 bind source，raw socket 可以反复利用，节省资源，提高性能。同时需要 root 权限也不是 raw socket 的缺点，因为 bind source 没有 root 权限的话无法绑定 1024 以下的端口。
+
 &emsp;&emsp;看到这里基本上都是写代码的老兄了，我就献丑把用 Rust 写的代码粘贴出来了。recvmsg 的代码可以看 [shadowsocks-rust](https://github.com/shadowsocks/shadowsocks-rust/blob/3d8c4cb641e921873ebe2fdf4d04367a5c234e0a/crates/shadowsocks-service/src/local/redir/udprelay/sys/unix/linux.rs#L180)
 ```rust
 fn udp_sendto(
