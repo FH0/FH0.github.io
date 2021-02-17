@@ -34,13 +34,12 @@ iptables -t mangle -A PREROUTING -s 192.168.0.0/16 ! -d 192.168.0.0/16 -p udp -j
 
 &emsp;&emsp;再说说 OUTPUT 吧。比如，路由器只能代理它的子网，而它本身是不能代理的，因为没有添加 OUTPUT 上的规则。要弄清楚这个，得搞懂支持 TPROXY 的代理软件是怎么把数据发回去的。
 
-```txt
-对于 TCP，就是直接写就行了，但是返回去的数据包会被 TPROXY 打上标记，从而路由。这是不行的，所以要取消标记，从而不被路由。
+- 对于 TCP，就是直接写就行了，但是返回去的数据包会被 TPROXY 打上标记，从而路由。这是不行的，所以要取消标记，从而不被路由。
 
-对于 UDP，一般是新建一个 socket，然后 bind source。或者是用 raw socket，感兴趣可以看看[这篇文章]({% post_url 2021-02-17-tproxy-raw-socket %})。没什么问题。
-```
+- 对于 UDP，一般是新建一个 socket，然后 bind source。或者是用 raw socket，感兴趣可以看看[这篇文章]({% post_url 2021-02-17-tproxy-raw-socket %})。没什么问题。
 
 &emsp;&emsp;下面的规则会同时代理本机和被转发的设备的数据。当然，需要 [setgid](https://man7.org/linux/man-pages/man2/setgid.2.html) 为 2000，这也是一个小技巧，通过 gid 来放行（uid 为 0，gid 为 2000 是被允许的）。至于 DNS 什么的。。。
+
 ```bash
 ip route add local default dev lo table 2000
 ip rule add from all fwmark 0x20000 lookup 2000
