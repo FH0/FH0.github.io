@@ -1,7 +1,7 @@
 ---
 layout: post
 title: iptables 匹配 dns 请求中的域名
-category: 编译
+category: 折腾
 ---
 
 ```bash
