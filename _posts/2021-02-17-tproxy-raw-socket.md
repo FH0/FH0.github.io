@@ -68,16 +68,14 @@ fn udp_sendto4(
     let checksum = udp::ipv4_checksum(&udp_header.to_immutable(), &saddr, &daddr);
     udp_header.set_checksum(checksum);
 
-    udp_buf.resize(20 + 8 + data_buf.len(), 0);
-
     let daddr_socketaddr = SocketAddrV4::new(daddr, dport);
     if unsafe {
         libc::sendto(
             self.raw4,
             udp_buf.as_mut_ptr() as *mut _,
-            udp_buf.len(),
+            20 + 8 + data_buf.len(),
             0,
-            &daddr_socketaddr as *const _ as *const libc::sockaddr,
+            &daddr_socketaddr as *const _ as *const _,
             std::mem::size_of_val(&daddr_socketaddr) as _,
         ) == -1
     } {
@@ -109,21 +107,20 @@ fn udp_sendto6(
     let mut udp_header = MutableUdpPacket::new(payload).unwrap();
     udp_header.set_source(sport);
     udp_header.set_destination(dport);
-    udp_header.set_length((8 + data_buf.len()) as u16);
+    udp_header.set_length(8 + data_buf.len() as u16);
     udp_header.set_payload(&data_buf);
     let checksum = udp::ipv6_checksum(&udp_header.to_immutable(), &saddr, &daddr);
     udp_header.set_checksum(checksum);
 
-    udp_buf.resize(40 + 8 + data_buf.len(), 0);
-
-    let daddr_socketaddr = SocketAddrV6::new(daddr, dport, 0, 0);
+    // dport must 0, it's fuck enough, https://stackoverflow.com/a/47779888/12651220
+    let daddr_socketaddr = SocketAddrV6::new(daddr, 0, 0, 0);
     if unsafe {
         libc::sendto(
             self.raw6,
             udp_buf.as_mut_ptr() as *mut _,
-            udp_buf.len(),
+            40 + 8 + data_buf.len(),
             0,
-            &daddr_socketaddr as *const _ as *const libc::sockaddr,
+            &daddr_socketaddr as *const _ as *const _,
             std::mem::size_of_val(&daddr_socketaddr) as _,
         ) == -1
     } {
